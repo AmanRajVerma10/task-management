@@ -6,8 +6,9 @@ function TaskItem({ task, onDelete }) {
     <div className="task-item">
       <h3>{task.title}</h3>
       <p>{task.dueDate}</p>
+      <p>{task.status}</p>
       <Link to={`/task/${task.id}`}>View Details</Link>
-      <button onClick={() => onDelete(task.id)}>Delete</button>
+      <button onClick={() => onDelete(task.id)}>Delete Task</button>
     </div>
   );
 }

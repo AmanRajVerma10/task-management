@@ -2,6 +2,7 @@ const TASKS_KEY = 'tasks';
 
 export const getTasks = () => {
   const tasks = localStorage.getItem(TASKS_KEY);
+  console.log(JSON.parse(tasks));
   return tasks ? JSON.parse(tasks) : [];
 };
 
@@ -21,6 +22,7 @@ export const deleteTask = (id) => {
   let tasks = getTasks();
   tasks = tasks.filter(task => task.id !== id);
   localStorage.setItem(TASKS_KEY, JSON.stringify(tasks));
+  alert("Task Successfully Deleted!")
 };
 
 export const updateTaskStatus = (id, status) => {

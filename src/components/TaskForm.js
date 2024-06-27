@@ -12,6 +12,7 @@ function TaskForm({ onSave }) {
       return;
     }
     onSave({ title, description, dueDate, status: 'todo' });
+    alert("Task Successfully Created");
   };
 
   return (
