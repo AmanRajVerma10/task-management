@@ -3,9 +3,9 @@ import TaskList from '../components/TaskList';
 import { getTasks, deleteTask } from '../utils/storage';
 
 const statusOrder = {
-  'in progress': 1,
-  'done': 3,
-  'todo': 2,
+  'In Progress': 1,
+  'Done': 3,
+  'To-Do': 2,
 };
 
 function HomePage() {

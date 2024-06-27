@@ -11,7 +11,7 @@ function TaskForm({ onSave }) {
       alert('Title is required');
       return;
     }
-    onSave({ title, description, dueDate, status: 'todo' });
+    onSave({ title, description, dueDate, status: 'To-Do' });
     alert("Task Successfully Created");
   };
 

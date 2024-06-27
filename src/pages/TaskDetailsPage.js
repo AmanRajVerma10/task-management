@@ -32,9 +32,9 @@ function TaskDetailsPage() {
       <p>Due: {task.dueDate}</p>
       <p>Status: {task.status}</p>
       <button onClick={handleDelete}>Delete</button>
-      <button onClick={() => handleStatusChange('todo')}>To Do</button>
-      <button onClick={() => handleStatusChange('in progress')}>In Progress</button>
-      <button onClick={() => handleStatusChange('done')}>Done</button>
+      <button onClick={() => handleStatusChange('To-Do')}>To Do</button>
+      <button onClick={() => handleStatusChange('In Progress')}>In Progress</button>
+      <button onClick={() => handleStatusChange('Done')}>Done</button>
     </div>
   );
 }
