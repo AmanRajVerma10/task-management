@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #447e29ab;
+  padding: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+nav ul li a {
+  color: rgb(14, 2, 2);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+main {
+  padding: 1em;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.task-item h3 {
+  margin: 0 0 0.5em 0;
+}
+
+.task-item p {
+  margin: 0.5em 0;
+}
+
+.task-item a {
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #333;
   color: white;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item a:hover {
+  background-color: #555;
+  border-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"], input[type="date"], select, textarea {
+  width: 20%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5em 1em;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.task-form input[type="text"], .task-form textarea, .task-form input[type="date"], .task-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.sort-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.sort-filter-container input, .sort-filter-container select {
+  width: auto;
+  margin: 0 0.5em;
 }

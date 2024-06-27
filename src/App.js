@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/Homepage";
 import TaskDetailsPage from "./pages/TaskDetailsPage";
 import TaskCreationPage from "./pages/TaskCreationPage";
+import './App.css';
 
 function App() {
   return (
